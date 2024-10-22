@@ -5,7 +5,7 @@ import Balance from "./Balance/Balance";
 
 const PageUp = () => {
     return (
-        <div>
+        <div className="PageUp">
             <Balance/>      
         </div>
     )
