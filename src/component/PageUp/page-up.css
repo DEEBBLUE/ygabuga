@@ -5,6 +5,7 @@
     width: 100%;
 }
 .PageUp{
+    position: absolute;
     background-color: #FFAA00;
-    align: right;
+    text-align: right;
 }
