@@ -3,6 +3,8 @@
     padding: 0;
     height: 20px;
     width: 100%;
-    background-color: blue;
 }
-
+.PageUp{
+    background-color: #FFAA00;
+    align: right;
+}
