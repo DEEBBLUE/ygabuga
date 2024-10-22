@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Balance = () => {
   return (
-    <div>Balance</div>
+    <div className="Button">Balance</div>
   )
 }
 
