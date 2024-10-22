@@ -1,9 +1,9 @@
 import React from "react";
 import "./page-up.css";
-import Balance from "./Balance/Balance";""
+import Balance from "./Balance/Balance";
 
 
-const pageUp = () => {
+const PageUp = () => {
     return (
         <div>
             <Balance/>      
@@ -11,4 +11,4 @@ const pageUp = () => {
     )
 }
 
-export default pageUp
+export default PageUp

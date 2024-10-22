@@ -1,10 +1,10 @@
 import "./App.css";
-import pageUp from "./component/PageUp/page-up";
+import PageUp from "./component/PageUp/page-up";
 
 function App(){
     return(
         <div className="App">
-            <pageUp/>
+            <PageUp/>
         </div>
     );
 }
