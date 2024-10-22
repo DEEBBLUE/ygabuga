@@ -1,7 +1,9 @@
-.Case{
-    margin-left: auto;
-    margin-right: auto;
-    outline-color:  #FFAA00;
+.Case {
+    margin: auto;
+    padding: 30;
+    outline-color: #FFAA00;
     outline-style: solid;
-    outline-width: 2px;
+    outline-width: 4px;
+    height: 150%;
+    width: 30%;
 }
