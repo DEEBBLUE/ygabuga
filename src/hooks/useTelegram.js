@@ -15,3 +15,5 @@ export function useTelegram() {
         onToggleButton,
     }
 }
+
+export default useTelegram;
