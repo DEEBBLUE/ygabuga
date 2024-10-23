@@ -1,13 +1,13 @@
-import React from "react";
+import {React,useState} from "react";
 import Case from "./Case";
-import useTelegram from '../../hooks/useTelegram.js'
 
 export const CaseList = () => {
-    const {onToggleButton} = useTelegram();
+    const [active1, setActivet1] = useState(false);
+    const [active2, setActivet2] = useState(false);
     return (
         <div>
-            <Case onClick={onToggleButton}/>
-            <Case onClick={onToggleButton}/>
+            <Case state={active1} setState={setActivet1}/>
+            <Case state={active1} setState={setActivet2}/>
         </div>
     )
 
