@@ -1,9 +1,13 @@
 .Case {
     margin: auto;
+    margin-top: 10px;
     padding: 30;
     outline-color: #FFAA00;
     outline-style: solid;
     outline-width: 4px;
-    height: 150%;
-    width: 30%;
+    width: 40vw;
+    height: 70vh;
+}
+.Case:active{
+   background-color: #FFAA00; 
 }
