@@ -3,7 +3,7 @@ import "./Case.css";
 
 export const Case = (props) => {
    const onClick = () => {
-       if (props.id == props.activeId){
+       if (props.id === props.activeId){
             props.setState('0');
        }
        else{
