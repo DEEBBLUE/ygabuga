@@ -8,6 +8,14 @@
     width: 70vw;
     height: 40vh;
 }
-.Case:active{
-   background-color: #FFAA00; 
+.CaseActive{
+    margin: auto;
+    margin-top: 10px;
+    padding: 30;
+    outline-color: #FFAA00;
+    outline-style: solid;
+    outline-width: 4px;
+    width: 70vw;
+    height: 40vh;
+    background-color: #FFAA00; 
 }
