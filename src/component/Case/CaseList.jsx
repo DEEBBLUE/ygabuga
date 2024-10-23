@@ -11,3 +11,5 @@ export const CaseList = () => {
     )
 
 }
+
+export default CaseList;
