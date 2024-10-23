@@ -1,19 +1,16 @@
 import React from "react";
 import "./Case.css";
-import useTelegram from '../../hooks/useTelegram.js'
 
 export const Case = (props) => {
-    const [showMainButton,hideMainButton] = useTelegram();
    const onClick = () => {
-       if (!props.state){
-           props.setState(true);
-           return showMainButton;
-       } 
+       if (props.id == props.activeId){
+            props.setState('0');
+       }
        else{
-            props.setState(false);
-            return hideMainButton;
+            props.setState(props.activeId);
        }
    } 
+
    return (
         <div className="Case" onClick={onClick}>
             <div className="Name"><h3>Case name</h3></div>
