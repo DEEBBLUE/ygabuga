@@ -7,6 +7,7 @@ export const CaseList = () => {
     return (
         <div>
             <Case onClick={onToggleButton}/>
+            <Case onClick={onToggleButton}/>
         </div>
     )
 
