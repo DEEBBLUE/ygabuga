@@ -2,8 +2,8 @@ const tg = window.Telegram.WebApp;
 
 export function useTelegram() {
     const onToggleButton = () => {
-        const theme = tg.themeParams.color = "#FFAA00"
-        tg.MainButton.setParams(theme);
+        tg.themeParams.color = "#FFAA00"
+        tg.MainButton.setParams();
         if(tg.MainButton.isVisible) {
             tg.MainButton.hide();
         } else {
