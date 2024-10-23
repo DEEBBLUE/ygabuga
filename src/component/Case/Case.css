@@ -4,18 +4,28 @@
     padding: 30;
     outline-color: #FFAA00;
     outline-style: solid;
-    outline-width: 4px;
-    width: 70vw;
-    height: 40vh;
+    outline-width: 2px;
+    width: 90vw;
+    height: 50vh;
+    text-align: center;
 }
-.CaseActive{
-    margin: auto;
-    margin-top: 10px;
-    padding: 30;
-    outline-color: #FFAA00;
-    outline-style: solid;
-    outline-width: 4px;
-    width: 70vw;
-    height: 40vh;
-    background-color: #FFAA00; 
+.div{
+    font: "Arial","Narrow"
+}
+.Name{
+    font-size:20px;
+    padding-top: 0.5em;
+}
+.img{
+    width: 30vw; 
+    height: 20vh;
+    padding-top: 0.5em;
+    padding-bottom: 0.8em;
+}
+.Price{
+    font-size: 30px;
+    padding-top: 0.5em;
+}
+.Description{
+    padding-top: 1.5em;
 }
