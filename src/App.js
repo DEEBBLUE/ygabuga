@@ -5,7 +5,6 @@ import PageUp from "./component/PageUp/page-up";
 function App(){
     return(
         <div className="App">
-            <PageUp/>
             <CaseList/>
         </div>
     );
