@@ -7,7 +7,7 @@ export const CaseList = () => {
     return (
         <div>
             <Case state={active1} setState={setActivet1}/>
-            <Case state={active1} setState={setActivet2}/>
+            <Case state={active2} setState={setActivet2}/>
         </div>
     )
 
