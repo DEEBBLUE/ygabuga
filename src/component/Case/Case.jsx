@@ -6,12 +6,12 @@ export const Case = (props) => {
     const [showMainButton,hideMainButton] = useTelegram();
    const onClick = () => {
        if (!props.state){
-           showMainButton();
            props.setState(true);
+           return showMainButton;
        } 
        else{
-            hideMainButton();
             props.setState(false);
+            return hideMainButton;
        }
    } 
    return (
