@@ -6,7 +6,7 @@ export const CaseList = () => {
     const {onToggleButton} = useTelegram();
     return (
         <div>
-            <Case clickHandler={onToggleButton}/>
+            <Case onClick={onToggleButton}/>
         </div>
     )
 
