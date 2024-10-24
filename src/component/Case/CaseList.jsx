@@ -6,7 +6,7 @@ export const CaseList = () => {
     const [activeId, setActiveId] = useState('0');
     const {MainButton} = useTelegram();
     useEffect(() => {
-        if (activeId === '0'){
+        if (activeId == '0'){
             MainButton.hide(); 
         }else{
             MainButton.show();
