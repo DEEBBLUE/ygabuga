@@ -4,7 +4,7 @@ import "./Case.css";
 export const Case = (props) => {
    const onClick = () => {
        if (props.id == props.activeId){
-            props.setState('0');
+            props.setState(0);
        }
        else{
             props.setState(props.activeId);
