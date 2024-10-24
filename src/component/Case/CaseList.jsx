@@ -8,15 +8,11 @@ export const CaseList = () => {
     const setState = (value) =>{
         setActiveId(value);
     };
-    useEffect(() => {
-        console.log(activeId);
-        if (activeId == '0'){
-            MainButton.hide(); 
-        }else{
-            MainButton.show();
-        }
-
-    },[activeId]);
+    if (activeId == 0){
+        MainButton.hide(); 
+    }else{
+        MainButton.show();
+    }
     return (
         <div>
             <Case id={1} setState={setState} activeId={activeId}/>

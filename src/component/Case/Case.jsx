@@ -7,7 +7,7 @@ export const Case = (props) => {
             props.setState(0);
        }
        else{
-            props.setState(props.activeId);
+            props.setState(props.id);
        }
    } 
 
