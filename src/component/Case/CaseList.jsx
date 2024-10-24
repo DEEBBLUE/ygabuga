@@ -12,7 +12,7 @@ export const CaseList = () => {
             MainButton.show();
         }
 
-    },[activeId]);
+    },[activeId,MainButton]);
     return (
         <div>
             <Case id={'1'} setState={setActiveId} activeId={activeId}/>
