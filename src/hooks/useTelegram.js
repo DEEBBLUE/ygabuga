@@ -5,7 +5,8 @@ export function useTelegram() {
     tg.MainButton.text = "Открыть"
     const MainButton = tg.MainButton;
     return {
-        MainButton
+        MainButton,
+        tg
     }
 }
 

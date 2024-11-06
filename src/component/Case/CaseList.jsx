@@ -4,7 +4,7 @@ import {useTelegram} from '../../hooks/useTelegram.js'
 
 export const CaseList = () => {
     const [activeId, setActiveId] = useState(0);
-    const {MainButton} = useTelegram();
+    const {MainButton,tg} = useTelegram();
     const setState = (value) =>{
         setActiveId(value);
     };
