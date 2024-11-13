@@ -8,15 +8,17 @@ axios.defaults.baseURL = BASE_URL;
 function App(){
     const {_ , tg} = useTelegram();
     const initData = tg.initData;
-    const data = initData.join('\n')
+    const data = initData;
     const res = axios.post("/user/Auth",{
         body: data
     });
-    return(
-        <div className="App">
-            <CaseList/>
-        </div>
-    );
+    if (res){
+        return(
+            <div className="App">
+                <CaseList/>
+            </div>
+        );
+    }
 }
 
 export default App;
