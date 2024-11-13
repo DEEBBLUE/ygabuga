@@ -4,12 +4,12 @@ import {useTelegram} from "./hooks/useTelegram";
 import axios from "axios";
 
 const BASE_URL = "https://gildbot.ru/api/v1";
-
+axios.defaults.baseURL = BASE_URL;
 function App(){
     const {_ , tg} = useTelegram();
     const initData = tg.initData;
-    axios.post(BASE_URL + "/user/Auth",{
-            data: initData 
+    axios.post("/user/Test",{
+            data: "Hello" 
         }
     );
     return(
