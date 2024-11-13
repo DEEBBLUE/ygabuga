@@ -9,7 +9,7 @@ function App(){
     const {_ , tg} = useTelegram();
     const initData = tg.initData;
     const res = axios.post("/user/Auth",{
-        body: initData
+        body: decodeURI(initData)
     });
     return(
         <div className="App">
