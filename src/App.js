@@ -11,6 +11,8 @@ function App(){
     const data = initData;
     const res = axios.post("/user/Auth",{
         body: data
+    }).then(function (response){
+        console.log(response.data)
     });
     if (res){
         return(
