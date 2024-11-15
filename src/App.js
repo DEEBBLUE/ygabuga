@@ -9,12 +9,16 @@ function App(){
     const {_ , tg} = useTelegram();
     const initData = tg.initData;
     const data = initData;
-    const res = axios.post("/user/Auth",{
-        body: data
-    }).then(function (response){
-        console.log(response.data)
-    });
-    if (res){
+    const response = async() =>{ 
+        try{
+            axios.post("/user/Auth",{
+                body: data
+            });
+        }catch(e){
+            console.log(e)
+        }
+    };
+    if (response.data["0"]){
         return(
             <div className="App">
                 <CaseList/>
