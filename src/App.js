@@ -10,14 +10,10 @@ function App(){
     const initData = tg.initData;
     const data = initData;
     const response = async() =>{ 
-        try{
-            axios.post("/user/Auth",{
-                body: data,
-                tg_id: tg.initDataUnsafe.user.id
-            });
-        }catch(e){
-            console.log(e)
-        }
+        axios.post("/user/Auth",{
+            body: data,
+            tg_id: tg.initDataUnsafe.user.id
+        });
     };
     if (response.data["message"] === null){
         return(
