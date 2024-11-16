@@ -12,7 +12,7 @@ function App(){
             body: initData,
             tg_id: tg.initDataUnsafe.user.id
         });
-    if (response.data["message"] === null){
+    if (response.data["message"] == true){
         return(
             <div className="App">
                 <CaseList/>
