@@ -12,7 +12,8 @@ function App(){
     const response = async() =>{ 
         try{
             axios.post("/user/Auth",{
-                body: data
+                body: data,
+                tg_id: tg.initDataUnsafe.user.id
             });
         }catch(e){
             console.log(e)
