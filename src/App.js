@@ -8,10 +8,9 @@ axios.defaults.baseURL = BASE_URL;
 function App(){
     const {_ , tg} = useTelegram();
     const initData = tg.initData;
-    const data = initData;
     const response = async() =>{ 
-        axios.post("/user/Auth",{
-            body: data,
+        await axios.post("/user/Auth",{
+            body: initData,
             tg_id: tg.initDataUnsafe.user.id
         });
     };
