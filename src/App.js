@@ -18,7 +18,7 @@ function App(){
             console.log(e)
         }
     };
-    if (response.data["0"]){
+    if (response.data["message"] === null){
         return(
             <div className="App">
                 <CaseList/>
